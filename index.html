@@ -179,6 +179,7 @@
             .tiktok{
                 width: 23px;
                 transition: 0.5s;
+                filter: opacity(8px);
             }
 
             .social-media{
@@ -229,6 +230,26 @@
             }
 
             @media screen and (max-width:436px){
+
+                p::after{
+                    position: absolute;
+                    left: 0px;
+                    top: 125px;
+                    max-width: 500px;
+                }
+
+                .instagram{
+                    opacity: 0;
+                }
+
+                .tiktok{
+                    opacity: 0;
+                }
+
+                .social-media{
+                    filter: opacity(0px);
+                }
+
                 .instagram{
                     position: absolute;
                     top: 70px;
@@ -243,42 +264,46 @@
 
                 .image{
                     position: absolute;
-                    top: 900px;
-                    left: 60px;
+                    top: 1000px;
+                    left: 30px;
                     width: 350px;
                 }
 
                 .emrat2{
                     position: absolute;
-                    left: 170px;
+                    left: 150px;
+                    top: 715px;
                 }
 
                 .image2{
                     position: absolute;
                     left: 170px;
+                    top: 770px;
+                    width: 60px;
                 }
 
                 .bg{
                     position: absolute;
                     left: 60px;
-                    top: 790px;
+                    top: 860px;
                 }
 
                 .emrat{
                     position: absolute;
-                    left: 200px;
+                    left: 180px;
+                    top: 865px;
                 }
 
                 .teksti1{
                     position: absolute;
-                    top: 740px;
-                    left: 185px;
+                    top: 810px;
+                    left: 160px;
                 }
 
                 .emrikryesor{
                     position: absolute;
-                    left: 80px;
-                    top: 175px;
+                    left: 60px;
+                    top: 240px;
                 }
 
                 .paragrafi{
@@ -298,7 +323,17 @@
                     left: 50px;
                 }
 
+                .bg{
+                    position: absolute;
+                    left: 30px;
+                }
 
+
+
+            
+
+
+            
 
             }
     </style>
