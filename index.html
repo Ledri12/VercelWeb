@@ -381,5 +381,153 @@
          <h3>Web Developer</h3>
          <p class="paragrafi">Hello, I am Ledri Demolli and I like digital things. I have knowledge of front end developer such as html, css, javascript programming languages ​​and </p>
     </div>
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hide the menu by default */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  transition: left 0.3s ease;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  background: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  border-bottom: 1px solid #555;
+}
+
+.menu-items li:last-child {
+  border-bottom: none;
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-items a:hover {
+  background: #555;
+}
+
+.instagram{
+    position: absolute;
+    width: 20px;
+    left: 20px;
+}
+
+.tiktok{
+    position: absolute;
+    width: 25px;
+    left: 45px;
+}
+
+@media screen and (max-width:1120px){
+    .bi-list{
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:395px){
+    .bi-list{
+        opacity: 1;
+        position: absolute;
+        left: 355px;
+        top: 20px;
+        width: 60px;
+    }
+
+    .instagram1{
+        position: absolute;
+        opacity: 1;
+        left: 20px;
+        width: 20px;
+    }
+
+    .tiktok1{
+        position: absolute;
+        opacity: 1;
+        top: 44px;
+        left: 45px;
+        width: 25px;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+
+
+    <i class=" bi-list"  onclick="toggleMenu()"></i>
+
+<div class="menu-container">
+    
+
+  <div class="bi bi-x-lg" onclick="toggleMenu()">
+    Menu
+  </div>
+  <ul class="menu-items">
+    <a href="https://www.instagram.com/3xledy_html/">
+    <img src="Instagram-Icon.png" class="instagram1"  alt="">
+</a>
+    <a href="https://www.tiktok.com/@3xledy_html?lang=en">                                
+    <img src="4138198.png" class="tiktok1" alt="">
+</a>
+  </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+  const menuContainer = document.querySelector('.menu-container');
+  if (menuContainer.style.left === '-250px') {
+    menuContainer.style.left = '0';
+  } else {
+    menuContainer.style.left = '-250px';
+  }
+}
+
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
