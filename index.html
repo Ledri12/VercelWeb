@@ -76,7 +76,7 @@
 
             p:after{
                 position: absolute;
-                top: 280px;
+                top: 400px;
                 left: 0%;
             }
             }
@@ -231,6 +231,10 @@
 
             @media screen and (max-width:436px){
 
+                .bi-list{
+                    opacity: 1;
+                }
+
                 p::after{
                     position: absolute;
                     left: 0px;
@@ -328,9 +332,11 @@
                     left: 30px;
                 }
 
-
-
-            
+                .emriposht {
+                 position: absolute;
+                 top: 900px;
+                 left: 649px;
+}
 
 
             
@@ -339,6 +345,8 @@
     </style>
 </head>
 <body>
+
+
 
 
 
@@ -458,11 +466,6 @@
     left: 45px;
 }
 
-@media screen and (max-width:1120px){
-    .bi-list{
-        opacity: 0;
-    }
-}
 
 
 @media screen and (max-width:395px){
@@ -490,9 +493,16 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:144px){
+   .bi-list{
+    opacity: 1;
+    position: absolute;
+   }
+}
+
+@media screen and (max-width:1900px){
     .bi-list{
-        opacity: 1;
+        opacity: 0;
         position: absolute;
         left: 355px;
         top: 20px;
@@ -513,8 +523,27 @@
         left: 45px;
         width: 25px;
     }
+
+    
 }
 
+      
+@media screen and (max-width:1082px){
+    .bi-list{
+        opacity: 0;
+    }
+
+    p::after{
+        position: absolute;
+        top: 180px;
+    }
+}
+
+@media screen and (max-width:436px){
+    .bi-list{
+        opacity: 1;
+    }
+}
 
 
   </style>
