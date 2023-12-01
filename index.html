@@ -164,8 +164,8 @@
 
             .emrat2{
                 position: absolute;
-                top: 90%;
-                left: 50%;
+                top: 40%;
+                left: 70%;
                 font-size: 25px;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             }
@@ -367,9 +367,80 @@
                 left: 720px;
             }
 
+            .ledrifoto{
+                width: 490px;
+                border-radius: 15px;
+                position: absolute;
+                top: 780px;
+                left: 80px;
+            }
+
+            .emrat25{
+                position: absolute;
+                top: 565px;
+                left: 690px;
+                font-size: 25px;
+                color: #333;
+            }
+
+            .perfoto{
+                position: absolute;
+                background-color: #83c5be;
+                top: 1000px;
+                border-radius: 30px;
+                left: 80px;
+                width: 490px;
+                height: 150px;
+                opacity: 0;
+                transition: 0.5s;
+            }
+
+            .perfoto:hover{
+                opacity: 1;
+                transition: 0.5s;
+            }
+
+            .fototext23{
+                position: absolute;
+                top: -10px;
+                left: 200px;
+            }
+
+            .perfoto:hover .fototext23 {
+                opacity: 1;
+                position: absolute;
+                top: -10px;
+                left: 200px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .teksti35{
+                position: absolute;
+                font-size: 15px;
+                color: white;
+                left: 75px;
+            }
+
+            
     </style>
 </head>
 <body>
+
+
+
+
+    <h6 class="emrat25">My Skills And My Projects</h6>
+
+
+
+    <img src="ledri.png" class="ledrifoto" alt="">
+
+
+    <div class="perfoto">
+        <h4 class="fototext23">Portofolio</h4>
+        <h3 class="teksti35">This is my first project i created to present myself</h3>
+    </div>
+
 
 
     <h5> &copy;Copyright 2023 Ledri Demolli. All rights reserved.</h5>
@@ -390,8 +461,6 @@
     <div class="vija">
 
     </div>
-
-        <h1 class="emrat2">My Skills</h1>
 
 
 
@@ -632,6 +701,18 @@
 }
 
 @media screen and (max-width:438px){
+
+    .ledrifoto{
+        position: absolute;
+        top: 1028px;
+        width: 280px;
+    }
+
+    h5{
+        position: absolute;
+        top: 1700px;
+    }
+
     .bi-list{
         opacity: 1;
         position: fixed;
@@ -666,7 +747,7 @@
    .emrat2{
     position: absolute;
     top: 542px;
-    left: 160px;
+    left: 190px;
    }
 
    .image2{
@@ -695,8 +776,9 @@
 
    .image{
     position: absolute;
-    top: 930px;
+    top: 1400px;
     left: 40px;
+    width: 300px;
    }
 
    p::before{
