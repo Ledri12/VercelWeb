@@ -13,6 +13,13 @@
   }
   
   @media screen and (max-width: 1200px) {
+
+    .fotoledri{
+        border-radius: 30%;
+        width: 330px;
+        margin-left: -80px;
+    }
+
     #desktop-nav {
       display: none;
     }
