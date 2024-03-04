@@ -259,6 +259,7 @@ section {
 .btn-color-1{
   background-color: rgb(255, 255, 255);
   color:#333333;
+  border: 3px solid black;
 }
 
 .btn-color-1:hover {
