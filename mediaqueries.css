@@ -15,10 +15,9 @@
   @media screen and (max-width: 1200px) {
 
     .fotoledri{
-      margin-bottom: -45px;
         border-radius: 15%;
         width: 330px;
-        height: 230px;
+        height: 195px;
         margin-left: -80px;
         margin-left: -15px;
     }
