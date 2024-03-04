@@ -1,158 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ledri Demolli</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ledri Demolli</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="fotoledri" src="7kmF.gif" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ledri Demolli</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+       
+          <button class="btn btn-color-1" onclick="location.href='//mail.google.com/mail/u/3/#inbox?compose=GTvVlcSKhpXnrVClmTzFTddCjvtCTkxvZDQHGvqJFKZXlphWcJnqvptNbKFxQHpkCDblvRjblhChQ'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+       
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="code_brackets_icon_155617.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 years <br />Frontend Development</p>
+            </div>
+
+          <div class="text-container">
 
 
-        body{
-            background: url(36.netflix-background.jpg);
-            background-position: center; 
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;       
-        }
 
-        .box{
-            height: 550px;
-            width: 400px;
-            background-color: black;
-            opacity: 0.8;
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-
-        h1{
-            text-transform: uppercase;
-            color: red;
-            display: flex;
-            font-family: "Anta", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        input{
-            display: flex;
-            padding: 15px;
-            width: 250px;
-            background-color: #333333;
-            outline: none;
-            border: #333333 3px;
-            color: white;
-            cursor: pointer;
-        }
-
-        input:focus::placeholder{
-             position: absolute;
-             top: -20px;
-        }
-
-
-        .countainer{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            text-align: center;
-        }
-
-      
-        h2 {
-            color: white;
-            font-size: 35px;
-            margin-bottom: 0px; 
-            margin-top: -170px;
-            font-family: sans-serif;
         
-        }
-
-        .text-container {
-            display: flex;
-            justify-content: flex-start;
-            align-content: flex-start;
-            margin-bottom: 0px;
-        }
-
-        button{
-            margin-top: 40px;
-            height: 45px;
-            width: 250px;
-            opacity: 1;
-            background-color: red;
-            color: white;
-            border: red;
-            position: relative;
-            overflow: hidden;
-            transition: color 0.5s ease; /* Këtu është ndryshimi */
-        }
-
-        button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background-color: gold;
-            transition: all 0.5s ease;
-            opacity: 0.5;
-        }
-
-        button:hover::before {
-            left: 0%;
-            height: 80px;
-        }
-
-        h4{
-            margin-top: 5px;
-            margin-left: -180px;
-            color: white;
-            font-size: 12px;
-            opacity: 0.5;
-            cursor: pointer;
-        }
-
-        h5{
-            margin-top: -25px;
-            margin-left: 180px;
-            color: white;
-            font-size: 12px;
-            opacity: 0.5;
-            cursor: pointer;
-        }
-
-        .kryesor {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: space-around;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="kryesor">
-        <h1>Netflix</h1>
-    </div>
-    <div class="box"></div>
-    <div class="countainer">
-        <input type="text" placeholder="Email or phone number">
-        <br>
-        <input type="password" placeholder="Password">
-        <div class="text-container">
-            <h2>Sign In</h1>
-        </div>
-        <button>Sign In</button>
-        <div class="info1">
-            <h4>Remember me</h4>
-            <h5>Need help?</h5>
-        </div>
-    </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
