@@ -211,7 +211,9 @@ section {
   margin-bottom: 1rem;
 }
 .fotoledri{
-    border-radius: 50%;
+    border-radius: 30%;
+    width: 530px;
+    margin-left: -80px;
 }
 
 .title {
