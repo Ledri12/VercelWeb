@@ -495,6 +495,7 @@ footer p {
     border: none;
     background-color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222;
 }
 
 #typewriter {
