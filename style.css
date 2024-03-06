@@ -481,10 +481,12 @@ footer p {
 }
 
 #darkModeBtni{
+    display: flex;
     padding: 8px;
+    font-size: 1.2rem;
     border-radius: 10px;
     border: none;
-    background-color: #6b7280;
+    background-color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -512,4 +514,10 @@ footer p {
       border-color: orange;
     }
   }
+
+  li{
+  display: flex;
+    align-content: center;
+    justify-content: center;
+}
   
