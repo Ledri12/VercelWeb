@@ -214,6 +214,18 @@ section {
     border-radius: 30%;
     width: 530px;
     margin-left: -80px;
+    border: 5px aqua solid;
+    animation: fotongjyra 1s alternate infinite;
+}
+
+@keyframes fotongjyra{
+    0%{
+        border: 5px #52b788 solid;
+    }
+
+    100%{
+        border: 5px #adb5bd solid;
+    }
 }
 
 .title {
@@ -450,3 +462,52 @@ footer {
 footer p {
   text-align: center;
 }
+
+#darkModeBtn{
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+
+#darkModeBtn:hover{
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+}
+
+#darkModeBtni{
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6b7280;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    display: inline-block;
+  }
+  
+  /* Animacioni typewriter */
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+  }
+  
+  /* Animacioni i ndalimit */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
