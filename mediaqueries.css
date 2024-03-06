@@ -22,6 +22,8 @@
         margin-left: -15px;
     }
 
+
+
     #desktop-nav {
       display: none;
     }
@@ -109,4 +111,14 @@
     .text-container {
       text-align: justify;
     }
-  }
+    .About-Info{
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+    }
+
