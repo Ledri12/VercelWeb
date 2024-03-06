@@ -136,30 +136,37 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  transition: 0.5s;
 }
 
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
+  transition: 0.5s;
 }
 
 .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
+  transition: 0.5s;
 }
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+  transition: 0.5s;
 }
 
 .hamburger-icon span:first-child {
   transform: none;
+  transition: 0.5s;
 }
 
 .hamburger-icon span:first-child {
   opacity: 1;
+  transition: 0.5s;
 }
 
 .hamburger-icon span:first-child {
   transform: none;
+  transition: 0.5s;
 }
 
 /* SECTIONS */
